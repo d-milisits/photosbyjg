@@ -1,0 +1,28 @@
+.about-content {
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+}
+.about-content img {
+  height: 600px;
+  width: 405px;
+}
+.about-content p {
+  text-transform: none;
+  margin-bottom:50px;
+}
+.cta {
+  margin-left: 50px;
+  width: 450px;
+}
+.cta a {
+  padding: 8px 20px;
+  border: 1px solid #2d3436;
+  transition: .25s;
+}
+.cta a:hover {
+  background-color: #2d3436;
+  color: #ecf0f1;
+}

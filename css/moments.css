@@ -1,0 +1,158 @@
+*,
+*::before {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width:70%;
+  max-width: 120rem;
+  margin:auto;
+  padding: 0 1.5rem;
+  margin-top: 17vh;
+}
+
+.image-gallery {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: .5rem;
+  grid-template-areas: 
+    'img-1 img-2 img-3'
+    'img-4 img-2 img-5'
+    'img-6 img-2 img-7'
+    'img-8 img-8 img-9'
+    'img-8 img-8 img-10'
+    'img-8 img-8 img-11'
+    'img-12 img-13 img-14'
+    'img-15 img-13 img-16'
+    'img-17 img-13 img-18'
+  ;
+}
+
+.image-gallery a {
+  width: 100%;
+  height: 16rem;
+  background-position: center;
+  background-position: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.image-gallery a i {
+  color: rgba(255,255,255,.6);
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.8);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a:hover i, .image-gallery i:hover::before {
+  opacity: 1;
+}
+
+.img-1 {
+  grid-area: img-1;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN02107.jpg?strip=info&w=1001&ssl=1");
+}
+.img-2 {
+  grid-area: img-2;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1");
+  min-height: 49rem;
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url("https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC02384.jpg?strip=info&w=1000&ssl=1");
+}
+.img-4 {
+  grid-area: img-4;
+  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC01590.jpg?strip=info&w=1000&ssl=1");
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00169.jpg?strip=info&w=1000&ssl=1");
+}
+.img-6 {
+  grid-area: img-6;
+  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC07231.jpg?strip=info&w=1001&ssl=1");
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC09838.jpg?strip=info&w=1000&ssl=1");
+}
+.img-8 {
+  grid-area: img-8;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1");
+  min-height: 49rem;
+}
+.img-9 {
+  grid-area: img-9;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN02107.jpg?strip=info&w=1001&ssl=1");
+
+}
+.img-10 {
+  grid-area: img-10;
+  background-image: url("https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC02384.jpg?strip=info&w=1000&ssl=1");
+}
+.img-11 {
+  grid-area: img-11;
+  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC01590.jpg?strip=info&w=1000&ssl=1");
+}
+.img-12 {
+  grid-area: img-12;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN02107.jpg?strip=info&w=1001&ssl=1");
+}
+.img-13 {
+  grid-area: img-13;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1");
+  min-height: 49rem;
+}
+.img-14 {
+  grid-area: img-14;
+  background-image: url("https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC02384.jpg?strip=info&w=1000&ssl=1");
+}
+.img-15 {
+  grid-area: img-15;
+  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC01590.jpg?strip=info&w=1000&ssl=1");
+}
+.img-16 {
+  grid-area: img-16;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00169.jpg?strip=info&w=1000&ssl=1");
+}
+.img-17 {
+  grid-area: img-17;
+  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC07231.jpg?strip=info&w=1001&ssl=1");
+}
+.img-18 {
+  grid-area: img-18;
+  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC09838.jpg?strip=info&w=1000&ssl=1");
+}

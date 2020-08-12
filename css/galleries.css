@@ -34,32 +34,32 @@
   opacity:0;
 }
 #one {
-  background-image: url('../photos/nature-thumbnail.PNG');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: transitionIn 2.15s .4s forwards;
-}
-#two {
-  background-image: url('../photos/sport-thumbnail.PNG');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: transitionIn 2.15s .55s forwards;
-}
-#three {
   background-image: url('../photos/moment-thumbnail.PNG');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: transitionIn 2.15s .8s forwards;
+  animation: transitionIn 1.5s .4s forwards;
 }
-#four {
+#two {
   background-image: url('../photos/box-thumbnail.PNG');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: transitionIn 2.15s 1.0s forwards;
+  animation: transitionIn 1.5s .55s forwards;
+}
+#three {
+  background-image: url('../photos/sport-thumbnail.PNG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: transitionIn 1.5s .7s forwards;
+}
+#four {
+  background-image: url('../photos/nature-thumbnail.PNG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: transitionIn 1.5s .9s forwards;
 }
 /* SHOW-CONTAINER STYLING */
 .container {
@@ -72,7 +72,7 @@
   height: 100%;
   width: 100%;
   display: block;
-  transition: .5s ease;
+  transition: .25s ease;
   backface-visibility: hidden;
   opacity:1;
 }

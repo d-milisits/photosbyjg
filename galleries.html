@@ -2,51 +2,54 @@
 <html>
   <head>
     <title>Galleries - JG</title>
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/galleries.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
   </head>
-    <body>
-      <div class="nav">
-        <div class="nav-left" id="dark">
-          <p class="headline">PHOTOS BY JONATHAN GREGGO</p>
-          <p class="sub dark">MOMENTS CAPTURED | MEMORIES FOREVER.</p>
+    <body>    
+      <div class="main" id="main">
+        <div class="nav animate__animated animate__fadeIn">
+          <div class="nav-left" id="dark">
+            <p class="headline">PHOTOS BY JONATHAN GREGGO</p>
+            <p class="sub dark">MOMENTS CAPTURED | MEMORIES FOREVER.</p>
+          </div>
+          <div class="nav-options" id="dark">
+            <p>ABOUT</p>
+            <p>CONTACT</p>
+          </div>
         </div>
-        <div class="nav-options" id="dark">
-          <p>ABOUT ME</p>
-          <p>GALLERIES</p>
-          <p>CONTACT ME</p>
-        </div>
-      </div>
-      <div class="main">
         <div class="showcase">
-          <div class="container">
-            <div class ="show-container" id="one"></div>
-            <div class="middle">
-              <div class="text">TRAVEL</div>
+            <div class="container" onclick="fadeOutReroute('main', 'special.html')">
+              <div class ="show-container" id="one"></div>
+              <div class="middle">
+                <div class="text">YOUR HAPPILY EVER AFTER</div>
+              </div>
             </div>
-          </div>
-          <div class="container">
-            <div class ="show-container" id="two"></div>
-            <div class="middle">
-              <div class="text">SPORTS</div>
+            <div class="container" onclick="fadeOutReroute('main', 'moments.html')">
+              <div class ="show-container" id="two"></div>
+              <div class="middle">
+                <div class="text">MOMENTS</div>
+              </div>
             </div>
-          </div>
-          <div class="container">
-            <div class ="show-container" id="three"></div>
-            <div class="middle">
-              <div class="text">YOUR SPECIAL DAY</div>
+            <div class="container">
+              <div class ="show-container" id="three"></div>
+              <div class="middle">
+                <div class="text">SPORTS</div>
+              </div>
             </div>
-          </div>
-          <div class="container">
-            <div class ="show-container" id="four"></div>
-            <div class="middle">
-              <div class="text">MOMENTS</div>
+            <div class="container">
+              <div class ="show-container" id="four"></div>
+              <div class="middle">
+                <div class="text">TRAVEL</div>
+              </div>
             </div>
-        </div>
       </div>
     </body>
 </html>

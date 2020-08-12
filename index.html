@@ -2,33 +2,40 @@
 <html>
   <head>
     <title>Photos By Jonathan Greggo</title>
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
   </head>
-    <body>
-      <div class="main">
+    <body onload="fadeOutLoading()">
+      <div class="main" id="main">
+        <div class="loading" id="loading">
+          <img class="animate__animated animate__fadeIn" src="./photos/DanBlack.png" alt="logo" />
+        </div>
         <!-- <i class="fa fa-bars" id="hamburger" aria-hidden="true"></i> -->
         <div class="nav">
           <div class="nav-left">
             <p class="headline">PHOTOS BY JONATHAN GREGGO</p>
             <p class="sub">MOMENTS CAPTURED | MEMORIES FOREVER.</p>
             <div class="nav-right">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="https://www.facebook.com/PhotosByJonathanGreggo" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/momentsbyjonathangreggo/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
           <div class="nav-options">
-            <p>ABOUT ME</p>
-            <p>GALLERIES</p>
-            <p>CONTACT ME</p>
+            <p onclick="fadeOutReroute('main', 'about.html')">ABOUT ME</p>
+            <p onclick="fadeOutReroute('main', 'contact.html')">CONTACT</p>
           </div>
         </div>
-        <a href="galleries.html"><p class="learn">VIEW GALLERIES</p></a>
+        <p class="learn" onclick="fadeOutReroute('main', 'galleries.html')">VIEW GALLERIES</p>
       </div>
     </body>
 </html>
