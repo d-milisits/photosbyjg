@@ -260,3 +260,26 @@ body {
     width: 450px;
   }
 }
+@media (max-width: 470px) {
+  .image-gallery {
+    grid-gap: 0.4rem;
+  }
+  .image-gallery #landscape {
+    width: 350px;
+    height: 215px;
+  }
+  .image-gallery #portrait {
+    height: 500px;
+    width: 350px;
+  }
+}
+@media (max-width: 376px) {
+  .image-gallery #landscape {
+    width: 325px;
+    height: 220px;
+  }
+  .image-gallery #portrait {
+    height: 485px;
+    width: 325px;
+  }
+}
