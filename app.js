@@ -13,3 +13,10 @@ function fadeOutReroute(id, route) {
     window.location.href = route;
   }, 900);
 }
+
+// Mobile menu toggle
+function toggleNav() {
+  document.getElementById('menu').classList.toggle('active');
+}
+document.getElementById('bgr').addEventListener("click", toggleNav, false);
+document.getElementById('close').addEventListener("click", toggleNav, false);

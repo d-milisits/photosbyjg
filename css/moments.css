@@ -1,158 +1,261 @@
 *,
-*::before {
-  margin:0;
-  padding:0;
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  width:100%;
-  height:100vh;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  /* display: flex; */
 }
-
 .container {
-  width:70%;
-  max-width: 120rem;
-  margin:auto;
-  padding: 0 1.5rem;
-  margin-top: 17vh;
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  padding: 0 1.25rem;
 }
-
 .image-gallery {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: .5rem;
-  grid-template-areas: 
-    'img-1 img-2 img-3'
-    'img-4 img-2 img-5'
-    'img-6 img-2 img-7'
-    'img-8 img-8 img-9'
-    'img-8 img-8 img-10'
-    'img-8 img-8 img-11'
-    'img-12 img-13 img-14'
-    'img-15 img-13 img-16'
-    'img-17 img-13 img-18'
-  ;
+  grid-gap: 0.55rem;
+  grid-template-areas:
+    "img-1 img-1 img-1"
+    "img-2 img-2 img-3"
+    "img-4 img-5 img-5"
+    "img-6 img-6 img-7"
+    "img-8 img-9 img-9"
+    "img-10 img-10 img-11"
+    "img-12 img-12 img-12"
+    "img-13 img-14 img-14"
+    "img-15 img-15 img-16"
+    "img-17 img-17 img-17"
+    "img-18 img-19 img-19"
+    "img-20 img-20 img-21"
+    "img-22 img-23 img-24"
+    "img-25 img-25 img-25"
+    "img-26 img-26 img-26"
+    "img-27 img-28 img-29"
+    "img-33 img-33 img-33"
+    "img-30 img-31 img-32"
+    "img-34 img-35 img-35"
+    "img-36 img-36 img-37"
+    "img-38 img-39 img-39";
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
-
 .image-gallery a {
   width: 100%;
-  height: 16rem;
+  height: 35rem;
   background-position: center;
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
 }
-
 .image-gallery a i {
-  color: rgba(255,255,255,.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 3rem;
   position: relative;
   z-index: 100;
   padding: 1rem 3rem;
-  border: 2px solid rgba(255,255,255,0.6);
-  border-radius: .4rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.4rem;
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
-
 .image-gallery a::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
-
-.image-gallery a:hover i, .image-gallery i:hover::before {
+.image-gallery a:hover i,
+.image-gallery i:hover::before {
   opacity: 1;
 }
-
+/* IMAGES */
 .img-1 {
   grid-area: img-1;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN02107.jpg?strip=info&w=1001&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-8hJrJST/0/X3/i-8hJrJST-X3.jpg");
 }
 .img-2 {
   grid-area: img-2;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1");
-  min-height: 49rem;
+  background-image: url("https://photos.smugmug.com/photos/i-GdpbCBh/0/X3/i-GdpbCBh-X3.jpg");
 }
 .img-3 {
   grid-area: img-3;
-  background-image: url("https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC02384.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-jZQmnkQ/0/X2/i-jZQmnkQ-X2.jpg");
 }
 .img-4 {
   grid-area: img-4;
-  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC01590.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-cZtPTtZ/0/X2/i-cZtPTtZ-X2.jpg");
 }
 .img-5 {
   grid-area: img-5;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00169.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-pPbPHGV/0/X3/i-pPbPHGV-X3.jpg");
 }
 .img-6 {
   grid-area: img-6;
-  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC07231.jpg?strip=info&w=1001&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-HVJJ6QS/0/X3/i-HVJJ6QS-X3.jpg");
 }
 .img-7 {
   grid-area: img-7;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC09838.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-Q4NCrQv/0/X2/i-Q4NCrQv-X2.jpg");
 }
 .img-8 {
   grid-area: img-8;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1");
-  min-height: 49rem;
+  background-image: url("https://photos.smugmug.com/photos/i-NPpZkwK/0/X2/i-NPpZkwK-X2.jpg");
 }
 .img-9 {
   grid-area: img-9;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN02107.jpg?strip=info&w=1001&ssl=1");
-
+  background-image: url("https://photos.smugmug.com/photos/i-K3W5QLd/0/X3/i-K3W5QLd-X3.jpg");
 }
 .img-10 {
   grid-area: img-10;
-  background-image: url("https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC02384.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-V5SVN2W/0/X3/i-V5SVN2W-X3.jpg");
 }
 .img-11 {
   grid-area: img-11;
-  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC01590.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-3cPJ5MG/0/X2/i-3cPJ5MG-X2.jpg");
 }
 .img-12 {
   grid-area: img-12;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN02107.jpg?strip=info&w=1001&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-fz4pfMj/0/X3/i-fz4pfMj-X3.jpg");
 }
 .img-13 {
   grid-area: img-13;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1");
-  min-height: 49rem;
+  background-image: url("https://photos.smugmug.com/photos/i-NRbztZ8/0/X2/i-NRbztZ8-X2.jpg");
 }
 .img-14 {
   grid-area: img-14;
-  background-image: url("https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC02384.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-nRBPtBf/0/X3/i-nRBPtBf-X3.jpg");
 }
 .img-15 {
   grid-area: img-15;
-  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC01590.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-XkZJsFw/0/X3/i-XkZJsFw-X3.jpg");
 }
 .img-16 {
   grid-area: img-16;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00169.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-2BcthGn/0/X2/i-2BcthGn-X2.jpg");
 }
 .img-17 {
   grid-area: img-17;
-  background-image: url("https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC07231.jpg?strip=info&w=1001&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-V9LXPqr/0/X3/i-V9LXPqr-X3.jpg");
 }
 .img-18 {
   grid-area: img-18;
-  background-image: url("https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC09838.jpg?strip=info&w=1000&ssl=1");
+  background-image: url("https://photos.smugmug.com/photos/i-XNrpzZf/0/X2/i-XNrpzZf-X2.jpg");
+}
+.img-19 {
+  grid-area: img-19;
+  background-image: url("https://photos.smugmug.com/photos/i-2LXThvL/0/X3/i-2LXThvL-X3.jpg");
+}
+.img-20 {
+  grid-area: img-20;
+  background-image: url("https://photos.smugmug.com/photos/i-xBTQmfD/0/X3/i-xBTQmfD-X3.jpg");
+}
+.img-21 {
+  grid-area: img-21;
+  background-image: url("https://photos.smugmug.com/photos/i-Vd4mQKq/0/X2/i-Vd4mQKq-X2.jpg");
+}
+.img-22 {
+  grid-area: img-22;
+  background-image: url("https://photos.smugmug.com/photos/i-ZktfwXS/0/X2/i-ZktfwXS-X2.jpg");
+}
+.img-23 {
+  grid-area: img-23;
+  background-image: url("https://photos.smugmug.com/photos/i-DJHNZLb/0/X2/i-DJHNZLb-X2.jpg");
+}
+.img-24 {
+  grid-area: img-24;
+  background-image: url("https://photos.smugmug.com/photos/i-LDFTg38/0/X2/i-LDFTg38-X2.jpg");
+}
+.img-25 {
+  grid-area: img-25;
+  background-image: url("https://photos.smugmug.com/photos/i-G28nMXz/0/X3/i-G28nMXz-X3.jpg");
+}
+.img-26 {
+  grid-area: img-26;
+  background-image: url("https://photos.smugmug.com/photos/i-jfQwt3m/0/X3/i-jfQwt3m-X3.jpg");
+}
+.img-27 {
+  grid-area: img-27;
+  background-image: url("https://photos.smugmug.com/photos/i-HhqWBK3/0/X2/i-HhqWBK3-X2.jpg");
+}
+.img-28 {
+  grid-area: img-28;
+  background-image: url("https://photos.smugmug.com/photos/i-VcBCgk9/0/X2/i-VcBCgk9-X2.jpg");
+}
+.img-29 {
+  grid-area: img-29;
+  background-image: url("https://photos.smugmug.com/photos/i-QQjZscc/0/X2/i-QQjZscc-X2.jpg");
+}
+.img-30 {
+  grid-area: img-30;
+  background-image: url("https://photos.smugmug.com/photos/i-sQN8pwT/0/X2/i-sQN8pwT-X2.jpg");
+}
+.img-31 {
+  grid-area: img-31;
+  background-image: url("https://photos.smugmug.com/photos/i-DMmGHVc/0/X2/i-DMmGHVc-X2.jpg");
+}
+.img-32 {
+  grid-area: img-32;
+  background-image: url("https://photos.smugmug.com/photos/i-xCwwZKS/0/X2/i-xCwwZKS-X2.jpg");
+}
+.img-32 {
+  grid-area: img-32;
+  background-image: url("https://photos.smugmug.com/photos/i-xCwwZKS/0/X2/i-xCwwZKS-X2.jpg");
+}
+.img-33 {
+  grid-area: img-33;
+  background-image: url("https://photos.smugmug.com/photos/i-m9nkmR6/0/X3/i-m9nkmR6-X3.jpg");
+}
+.img-34 {
+  grid-area: img-34;
+  background-image: url("https://photos.smugmug.com/photos/i-8SmQHMb/0/X2/i-8SmQHMb-X2.jpg");
+}
+.img-35 {
+  grid-area: img-35;
+  background-image: url("https://photos.smugmug.com/photos/i-DfP6DkW/0/X3/i-DfP6DkW-X3.jpg");
+}
+.img-36 {
+  grid-area: img-36;
+  background-image: url("https://photos.smugmug.com/photos/i-ZdNqLKC/0/X3/i-ZdNqLKC-X3.jpg");
+}
+.img-37 {
+  grid-area: img-37;
+  background-image: url("https://photos.smugmug.com/photos/i-txcWmbs/0/X2/i-txcWmbs-X2.jpg");
+}
+.img-38 {
+  grid-area: img-38;
+  background-image: url("https://photos.smugmug.com/photos/i-WcLVcgP/0/X2/i-WcLVcgP-X2.jpg");
+}
+.img-39 {
+  grid-area: img-39;
+  background-image: url("https://photos.smugmug.com/photos/i-7cghQqm/0/X3/i-7cghQqm-X3.jpg");
+}
+@media (max-width: 950px) {
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery #landscape {
+    width: 450px;
+    height: 300px;
+  }
+  .image-gallery #portrait {
+    height: 600px;
+    width: 450px;
+  }
 }

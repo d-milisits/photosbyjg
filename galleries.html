@@ -2,12 +2,12 @@
 <html>
   <head>
     <title>Galleries - JG</title>
-    <script src="app.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/galleries.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -17,39 +17,69 @@
       <div class="main" id="main">
         <div class="nav animate__animated animate__fadeIn">
           <div class="nav-left" id="dark">
-            <p class="headline">PHOTOS BY JONATHAN GREGGO</p>
-            <p class="sub dark">MOMENTS CAPTURED | MEMORIES FOREVER.</p>
+            <p class="headline">GALLERIES</p>
+            <p class="sub dark">PHOTOS BY JONATHAN GREGGO.</p>
           </div>
           <div class="nav-options" id="dark">
-            <p>ABOUT</p>
-            <p>CONTACT</p>
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT ME</a>
+            <a href="./contact.html">CONTACT</a>
+          </div>
+          <div class="bgr dark" id="bgr">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
           </div>
         </div>
         <div class="showcase">
-            <div class="container" onclick="fadeOutReroute('main', 'special.html')">
+          <a href="./special.html">
+            <div class="container">
               <div class ="show-container" id="one"></div>
-              <div class="middle">
-                <div class="text">YOUR HAPPILY EVER AFTER</div>
+              <div class="ctr-title">
               </div>
+              <p>Happily Ever After</p>
             </div>
-            <div class="container" onclick="fadeOutReroute('main', 'moments.html')">
-              <div class ="show-container" id="two"></div>
-              <div class="middle">
-                <div class="text">MOMENTS</div>
+          </a>
+            <a href="./moments.html">
+              <div class="container">
+                <div class ="show-container" id="two"></div>
+                <div class="ctr-title">
+                </div>
+                <p>Moments</p>
               </div>
-            </div>
-            <div class="container">
-              <div class ="show-container" id="three"></div>
-              <div class="middle">
-                <div class="text">SPORTS</div>
+            </a>
+            <a href="./sportGalleries.html">
+              <div class="container">
+                <div class ="show-container" id="three"></div>
+                <div class="ctr-title">
+                </div>
+                <p>Sports</p>
               </div>
-            </div>
-            <div class="container">
-              <div class ="show-container" id="four"></div>
-              <div class="middle">
-                <div class="text">TRAVEL</div>
+            </a>
+            <a href="./travel.html">
+              <div class="container">
+                <div class ="show-container" id="four"></div>
+                <div class="ctr-title">
+                </div>
+                <p>Travel</p>
               </div>
-            </div>
+            </a>
       </div>
+      <div class="mobile-menu" id="menu">
+        <h1 id="close">X</h1>
+        <img src="./photos/DanBlack.png"/>
+        <div class="mobile-options">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">Behind The Lens</a>
+          <a href="./galleries.html">All galleries</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="links">
+          <a href="https://www.facebook.com/PhotosByJonathanGreggo" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/momentsbyjonathangreggo/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+      </div>
+      <script src="app.js"></script>
     </body>
 </html>

@@ -1,26 +1,24 @@
 * {
-  margin:0;
-  padding:0;
-  font-family: 'Muli';
-}
-.nav {
-  position:fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Muli";
 }
 .main {
-  height:100vh;
-  width:100vw;
-  display:flex;
-  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  overflow:hidden;
+  /* overflow: hidden; */
 }
 .showcase {
-  height:100%;
-  width:100%;
-  display:flex;
+  height: 100%;
+  width: 100%;
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 4%;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  margin: 50px 0;
 }
 @keyframes transitionIn {
   from {
@@ -30,66 +28,99 @@
     opacity: 1;
   }
 }
-#one, #two, #three, #four {
-  opacity:0;
+#one,
+#two,
+#three,
+#four,
+#one-paintball,
+#two-fitness {
+  opacity: 0;
 }
 #one {
-  background-image: url('../photos/moment-thumbnail.PNG');
+  background-image: url("../photos/moment-thumbnail.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: transitionIn 1.5s .4s forwards;
+  animation: transitionIn 1.5s 0.4s forwards;
+}
+#one-paintball {
+  background-image: url("../photos/paintball-thumbnail.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: transitionIn 1.5s 0.4s forwards;
+}
+#two-fitness {
+  background-image: url("../photos/fitness-thumbnail.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: transitionIn 1.5s 0.55s forwards;
 }
 #two {
-  background-image: url('../photos/box-thumbnail.PNG');
+  background-image: url("../photos/box-thumbnail.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: transitionIn 1.5s .55s forwards;
+  animation: transitionIn 1.5s 0.55s forwards;
 }
 #three {
-  background-image: url('../photos/sport-thumbnail.PNG');
+  background-image: url("../photos/sport-thumbnail.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: transitionIn 1.5s .7s forwards;
+  animation: transitionIn 1.5s 0.65s forwards;
 }
 #four {
-  background-image: url('../photos/nature-thumbnail.PNG');
+  background-image: url("../photos/nature-thumbnail.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: transitionIn 1.5s .9s forwards;
+  animation: transitionIn 1.5s 0.8s forwards;
 }
 /* SHOW-CONTAINER STYLING */
 .container {
   position: relative;
-  height: 75vh;
-  width: 23.15vw;
+  height: 600px;
+  width: 400px;
   cursor: pointer;
+  margin: 10px;
 }
 .show-container {
   height: 100%;
   width: 100%;
   display: block;
-  transition: .25s ease;
+  transition: 0.25s ease;
   backface-visibility: hidden;
-  opacity:1;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  opacity: 1;
 }
 .container:hover .show-container {
   -webkit-filter: brightness(15%);
 }
-.container:hover .middle {
+.container .ctr-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 75px;
+  width: 0;
+  background-color: #ecf0f1;
+  transition: width 0.2s;
+  /* padding: 25px 10px; */
+}
+.container p {
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.container:hover .ctr-title {
+  width: 100%;
+}
+.container:hover p {
   opacity: 1;
 }
 .text {
@@ -97,4 +128,22 @@
   font-size: 34px;
   letter-spacing: 6px;
   font-weight: 500;
+}
+@media (max-width: 1660px) {
+  .container {
+    width: 300px;
+    margin: 2.5px;
+  }
+  .container .ctr-title {
+    height: 50px;
+  }
+  .container p {
+    bottom: 10px;
+  }
+}
+@media (max-width: 1210px) {
+  .showcase {
+    width: 75%;
+    flex-wrap: wrap;
+  }
 }

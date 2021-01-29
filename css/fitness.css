@@ -1,0 +1,82 @@
+/* IMAGES */
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0.55rem;
+  grid-template-areas:
+    "img-1 img-1 img-1"
+    "img-2 img-2 img-3"
+    "img-4 img-5 img-5"
+    "img-6 img-6 img-7"
+    "img-8 img-9 img-9"
+    "img-10 img-10 img-11"
+    "img-12 img-12 img-12"
+    "img-13 img-14 img-14"
+    "img-15 img-15 img-15";
+  margin-top: 65px;
+}
+.img-1 {
+  grid-area: img-1;
+  background-image: url("https://photos.smugmug.com/photos/i-kVcsJc9/0/X3/i-kVcsJc9-X3.jpg");
+}
+.img-2 {
+  grid-area: img-2;
+  background-image: url("https://photos.smugmug.com/photos/i-ccN3F3r/0/X3/i-ccN3F3r-X3.jpg");
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url("https://photos.smugmug.com/photos/i-PMhfWqR/0/X2/i-PMhfWqR-X2.jpg");
+}
+.img-4 {
+  grid-area: img-4;
+  background-image: url("https://photos.smugmug.com/photos/i-zSzfqdx/0/X2/i-zSzfqdx-X2.jpg");
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url("https://photos.smugmug.com/photos/i-g78Bhbn/0/X3/i-g78Bhbn-X3.jpg");
+}
+.img-6 {
+  grid-area: img-6;
+  background-image: url("https://photos.smugmug.com/photos/i-654jjcV/0/X3/i-654jjcV-X3.jpg");
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url("https://photos.smugmug.com/photos/i-tD3c7Vb/0/X2/i-tD3c7Vb-X2.jpg");
+}
+.img-8 {
+  grid-area: img-8;
+  background-image: url("https://photos.smugmug.com/photos/i-7mx4B8c/0/X2/i-7mx4B8c-X2.jpg");
+}
+.img-9 {
+  grid-area: img-9;
+  background-image: url("https://photos.smugmug.com/photos/i-M7zS73x/0/X3/i-M7zS73x-X3.jpg");
+}
+.img-10 {
+  grid-area: img-10;
+  background-image: url("https://photos.smugmug.com/photos/i-FPBTDcQ/0/X3/i-FPBTDcQ-X3.jpg");
+}
+.img-11 {
+  grid-area: img-11;
+  background-image: url("https://photos.smugmug.com/photos/i-SN8DQGv/0/X2/i-SN8DQGv-X2.jpg");
+}
+.img-12 {
+  grid-area: img-12;
+  background-image: url("https://photos.smugmug.com/photos/i-DrV86SW/0/X3/i-DrV86SW-X3.jpg");
+}
+@media (max-width: 950px) {
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery #landscape {
+    width: 450px;
+    height: 300px;
+  }
+  .image-gallery #portrait {
+    height: 600px;
+    width: 450px;
+  }
+}
