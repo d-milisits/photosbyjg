@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/special.css">
+    <link rel="stylesheet" type="text/css" href="./css/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -13,15 +14,19 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
   </head>
-    <body id="main">
+    <body onload="loadPageWithTitle()" id="main">
+      <div class="loading" id="loading">
+        <img  id="loadingImg" src="./photos/DanBlack.png" alt="logo" />
+        <p  id="loadingP">YOUR HAPPILY EVER AFTER</p>
+      </div>      
       <div class="nav animate__animated animate__fadeIn">
         <div class="nav-left" id="dark">
-          <p class="headline">MOMENTS</p>
+          <p class="headline">HAPPILY EVER AFTER</p>
           <p class="sub dark">PHOTOS BY JONATHAN GREGGO</p>
         </div>
         <div class="nav-options" id="dark">
           <a href="./index.html">HOME</a>
-          <a href="./index.html">GALLERIES</a>
+          <a href="./galleries.html">GALLERIES</a>
           <a href="./index.html">CONTACT</a>
         </div>
         <div class="bgr dark" id="bgr">
@@ -32,80 +37,80 @@
       </div>
       <div class="container animate__animated animate__fadeIn">
         <div class="image-gallery">
-          <a href="./photos/SUN03930.jpg" class="img-16" id="portrait">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN03923-3.jpg?strip=info&w=1500&ssl=1" class="img-16" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-17" id="portrait">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN03930.jpg?strip=info&w=1001&ssl=1" class="img-17" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-18" id="portrait">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN03899.jpg?strip=info&w=1001&ssl=1" class="img-18" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-19" id="portrait">
+          <a href="https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN04041.jpg?strip=info&w=1001&ssl=1" class="img-19" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-27" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-vgVffJK/0/X2/i-vgVffJK-X2.jpg" class="img-27" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-20" id="landscape">
+          <a href="https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/CTV07429c.jpg?strip=info&w=1000&ssl=1" class="img-20" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-21" id="landscape">
+          <a href="https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/all-ss-erel.jpg?strip=info&w=1001&ssl=1" class="img-21" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-22" id="landscape">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/SUN03923-2.jpg?strip=info&w=1000&ssl=1" class="img-22" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-23" id="portrait">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/w1.jpg?strip=info&w=1500&ssl=1" class="img-23" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-24" id="landscape">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00207-2.jpg?strip=info&w=1000&ssl=1" class="img-24" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-25" id="landscape">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00408.jpg?strip=info&w=1000&ssl=1" class="img-25" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-26" id="landscape">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00414-copy-1.jpg?strip=info&w=1001&ssl=1" class="img-26" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
           <!-- CEREMONY -->
-          <a href="./photos/SUN03930.jpg" class="img-1" id="landscape">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00032.jpg?strip=info&w=1000&ssl=1" class="img-1" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-2" id="portrait">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00076-copy.jpg?strip=info&w=1500&ssl=1" class="img-2" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-3" id="landscape">
+          <a href="https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00303.jpg?strip=info&w=1000&ssl=1" class="img-3" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-4" id="landscape">
+          <a href="https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00141.jpg?strip=info&w=1000&ssl=1" class="img-4" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-5" id="landscape">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00346-copy.jpg?strip=info&w=1000&ssl=1" class="img-5" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-8" id="portrait">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/w1.jpg?strip=info&w=1500&ssl=1" class="img-8" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-9" id="landscape">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00207-2.jpg?strip=info&w=1000&ssl=1" class="img-9" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-10" id="landscape">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00408.jpg?strip=info&w=1000&ssl=1" class="img-10" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-11" id="landscape">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00414-copy-1.jpg?strip=info&w=1001&ssl=1" class="img-11" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-12" id="portrait">
+          <a href="https://i2.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC09217.jpg?strip=info&w=1500&ssl=1" class="img-12" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-13" id="landscape">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC00479.jpg?strip=info&w=1000&ssl=1" class="img-13" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-14" id="landscape">
+          <a href="https://i0.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC08939.jpg?strip=info&w=1001&ssl=1" class="img-14" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="./photos/SUN03930.jpg" class="img-15" id="portrait">
+          <a href="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC09212-copy.jpg?strip=info&w=1500&ssl=1" class="img-15" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
         </div>

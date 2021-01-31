@@ -58,7 +58,7 @@ body {
 }
 .image-gallery a i {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
   z-index: 100;
   padding: 1rem 3rem;
@@ -280,5 +280,15 @@ body {
   .image-gallery #portrait {
     height: 485px;
     width: 325px;
+  }
+}
+@media (max-width: 321px) {
+  .image-gallery #landscape {
+    width: 275px;
+    height: 175px;
+  }
+  .image-gallery #portrait {
+    height: 400px;
+    width: 275px;
   }
 }

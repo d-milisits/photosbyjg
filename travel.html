@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/travel.css">
+    <link rel="stylesheet" type="text/css" href="./css/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -13,7 +14,11 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
   </head>
-    <body id="main">
+  <body onload="loadPageWithTitle()" id="main">
+    <div class="loading" id="loading">
+      <img  id="loadingImg" src="./photos/DanBlack.png" alt="logo" />
+      <p  id="loadingP">JONATHAN GREGGO- TRAVEL</p>
+    </div>   
     <div class="nav animate__animated animate__fadeIn">
       <div class="nav-left" id="dark">
         <p class="headline">TRAVEL</p>

@@ -7,7 +7,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   /* overflow: hidden; */
 }
@@ -131,7 +131,7 @@
 }
 @media (max-width: 1660px) {
   .container {
-    width: 300px;
+    width: 275px;
     margin: 2.5px;
   }
   .container .ctr-title {

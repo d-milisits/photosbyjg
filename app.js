@@ -1,18 +1,27 @@
 function fadeOutLoading() {
-  console.log('test');
-  var loading = document.getElementById('loading');
+  const loading = document.getElementById('loading');
   setTimeout(()=>{
     loading.className += " animate__animated animate__fadeOut";
   }, 1250);
 }
 
-function fadeOutReroute(id, route) {
-  var exitpage = document.getElementById(id);
-  exitpage.className += " animate__animated animate__fadeOut";
+function loadPageWithTitle() {
+  const loading = document.getElementById('loading');
   setTimeout(()=>{
-    window.location.href = route;
-  }, 900);
+    loading.className += " animate__animated animate__fadeOut";
+    setTimeout(()=>{
+      loading.style.visibility = 'hidden';
+    }, 500);
+  }, 1500);
 }
+
+// function fadeOutReroute(id, route) {
+//   var exitpage = document.getElementById(id);
+//   exitpage.className += " animate__animated animate__fadeOut";
+//   setTimeout(()=>{
+//     window.location.href = route;
+//   }, 900);
+// }
 
 // Mobile menu toggle
 function toggleNav() {

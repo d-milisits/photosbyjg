@@ -57,6 +57,9 @@ html {
   display: none;
   cursor: pointer;
 }
+.bgr.homepage {
+  margin-top: 20px;
+}
 .bgr .bar {
   height: 4px;
   width: 35px;
@@ -236,6 +239,9 @@ img {
   .nav-options {
     font-size: 0.9rem;
   }
+  .nav.homepage .headline {
+    width: 65%;
+  }
 }
 @media (max-width: 992px) {
   .nav {
@@ -253,6 +259,7 @@ img {
   }
   .bgr {
     display: inline-block;
+    margin-right: -11.5px;
   }
   .nav .headline {
     width: 65%;
@@ -282,7 +289,7 @@ img {
   }
   .nav .headline {
     width: 90%;
-    font-size: 1.85rem;
+    font-size: 1.7rem;
     line-height: 95%;
   }
   .nav {
@@ -290,7 +297,7 @@ img {
     margin-left: 5px;
   }
   .nav .sub {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     width: 75%;
   }
   .mobile-menu .mobile-options a {

@@ -1,0 +1,45 @@
+/* LOADING BOX */
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  z-index:1000;
+}
+.loading p {
+  margin-top: 15px;
+  font-size: 1.25vw;
+  letter-spacing: 5px;
+  font-weight: 100;
+  animation: fadeOutUp;
+  animation-delay: 0.85s;
+  animation-fill-mode: both;
+  animation-duration: 0.75s;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+.loading img {
+  animation-delay: 0.2s;
+  height: auto;
+  width: 10vw;
+  animation: fadeOutUp;
+  animation-delay: 0.75s;
+  animation-fill-mode: both;
+  animation-duration: 0.75s;
+  animation-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+/* LOADING BOX END */
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

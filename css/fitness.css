@@ -103,3 +103,13 @@
     width: 325px;
   }
 }
+@media (max-width: 321px) {
+  .image-gallery #landscape {
+    width: 275px;
+    height: 175px;
+  }
+  .image-gallery #portrait {
+    height: 400px;
+    width: 275px;
+  }
+}

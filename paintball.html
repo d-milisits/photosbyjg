@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/moments.css">
     <link rel="stylesheet" type="text/css" href="./css/paintball.css">
+    <link rel="stylesheet" type="text/css" href="./css/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -14,7 +15,11 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
   </head>
-    <body id="main">
+    <body onload="loadPageWithTitle()" id="main">
+    <div class="loading" id="loading">
+      <img  id="loadingImg" src="./photos/DanBlack.png" alt="logo" />
+      <p  id="loadingP">JONATHAN GREGGO- PAINTBALL</p>
+    </div>    
     <div class="nav animate__animated animate__fadeIn">
       <div class="nav-left" id="dark">
         <p class="headline">PAINTBALL</p>
@@ -22,7 +27,7 @@
       </div>
       <div class="nav-options" id="dark">
         <a href="./index.html">HOME</a>
-        <a href="./index.html">GALLERIES</a>
+        <a href="./galleries.html">GALLERIES</a>
         <a href="./index.html">CONTACT</a>
       </div>
       <div class="bgr dark" id="bgr">
@@ -33,112 +38,112 @@
     </div>
       <div class="container animate__animated animate__fadeIn">
         <div class="image-gallery">
-          <a href="https://photos.smugmug.com/photos/i-5JgmQJR/0/X3/i-5JgmQJR-X3.jpg" class="img-1" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-5JgmQJR/0/X3/i-5JgmQJR-X3.jpg" target="_blank" class="img-1" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-9ScVfjF/0/X3/i-9ScVfjF-X3.jpg" class="img-2" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-9ScVfjF/0/X3/i-9ScVfjF-X3.jpg" target="_blank" class="img-2" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-nqQTQSz/0/X2/i-nqQTQSz-X2.jpg" class="img-3" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-nqQTQSz/0/X2/i-nqQTQSz-X2.jpg" target="_blank" class="img-3" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-m9w5TzX/0/X2/i-m9w5TzX-X2.jpg" class="img-4" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-m9w5TzX/0/X2/i-m9w5TzX-X2.jpg" target="_blank" class="img-4" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-QQTcD6C/0/X3/i-QQTcD6C-X3.jpg" class="img-5" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-QQTcD6C/0/X3/i-QQTcD6C-X3.jpg" target="_blank" class="img-5" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-mNzgJfr/0/X3/i-mNzgJfr-X3.jpg" class="img-6" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-mNzgJfr/0/X3/i-mNzgJfr-X3.jpg" target="_blank" class="img-6" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-bNxDg2Q/0/X2/i-bNxDg2Q-X2.jpg" class="img-7" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-bNxDg2Q/0/X2/i-bNxDg2Q-X2.jpg" target="_blank" class="img-7" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-fZ4BFr8/0/X2/i-fZ4BFr8-X2.jpg" class="img-8" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-fZ4BFr8/0/X2/i-fZ4BFr8-X2.jpg" target="_blank" class="img-8" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-Hk7zcvn/0/X3/i-Hk7zcvn-X3.jpg" class="img-9" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-Hk7zcvn/0/X3/i-Hk7zcvn-X3.jpg" target="_blank" class="img-9" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-NmjNCZq/0/X3/i-NmjNCZq-X3.jpg" class="img-10" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-NmjNCZq/0/X3/i-NmjNCZq-X3.jpg" target="_blank" class="img-10" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-ZZmQ2gs/0/X2/i-ZZmQ2gs-X2.jpg" class="img-11" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-ZZmQ2gs/0/X2/i-ZZmQ2gs-X2.jpg" target="_blank" class="img-11" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-GTGG8dd/0/X3/i-GTGG8dd-X3.jpg" class="img-12" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-GTGG8dd/0/X3/i-GTGG8dd-X3.jpg" target="_blank" class="img-12" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-cmjJgXV/0/X2/i-cmjJgXV-X2.jpg" class="img-13" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-cmjJgXV/0/X2/i-cmjJgXV-X2.jpg" target="_blank" class="img-13" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-JkWqDt5/0/X3/i-JkWqDt5-X3.jpg" class="img-14" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-JkWqDt5/0/X3/i-JkWqDt5-X3.jpg" target="_blank" class="img-14" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-n8ZN8PH/0/X3/i-n8ZN8PH-X3.jpg" class="img-15" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-n8ZN8PH/0/X3/i-n8ZN8PH-X3.jpg" target="_blank" class="img-15" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-jC2ZS8s/0/X2/i-jC2ZS8s-X2.jpg" class="img-16" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-jC2ZS8s/0/X2/i-jC2ZS8s-X2.jpg" target="_blank" class="img-16" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-F4vLPtt/0/X3/i-F4vLPtt-X3.jpg" class="img-17" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-F4vLPtt/0/X3/i-F4vLPtt-X3.jpg" target="_blank" class="img-17" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-7vXZ3Vb/0/X2/i-7vXZ3Vb-X2.jpg" class="img-18" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-7vXZ3Vb/0/X2/i-7vXZ3Vb-X2.jpg" target="_blank" class="img-18" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-P6XCdNr/0/X3/i-P6XCdNr-X3.jpg" class="img-19" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-P6XCdNr/0/X3/i-P6XCdNr-X3.jpg" target="_blank" class="img-19" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-rXZw9qZ/0/X3/i-rXZw9qZ-X3.jpg" class="img-20" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-rXZw9qZ/0/X3/i-rXZw9qZ-X3.jpg" target="_blank" class="img-20" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-QkcN2bq/0/X2/i-QkcN2bq-X2.jpg" class="img-21" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-QkcN2bq/0/X2/i-QkcN2bq-X2.jpg" target="_blank" class="img-21" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-5NFV3LV/0/X3/i-5NFV3LV-X3.jpg" class="img-25" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-5NFV3LV/0/X3/i-5NFV3LV-X3.jpg" target="_blank" class="img-25" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-RVCzggk/0/X3/i-RVCzggk-X3.jpg" class="img-26" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-RVCzggk/0/X3/i-RVCzggk-X3.jpg" target="_blank" class="img-26" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-s43Nqkq/0/X2/i-s43Nqkq-X2.jpg" class="img-27" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-s43Nqkq/0/X2/i-s43Nqkq-X2.jpg" target="_blank" class="img-27" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-Ztvq986/0/X2/i-Ztvq986-X2.jpg" class="img-28" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-Ztvq986/0/X2/i-Ztvq986-X2.jpg" target="_blank" class="img-28" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-gSNLWnp/0/X2/i-gSNLWnp-X2.jpg" class="img-29" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-gSNLWnp/0/X2/i-gSNLWnp-X2.jpg" target="_blank" class="img-29" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-SwWGNrC/0/X2/i-SwWGNrC-X2.jpg" class="img-30" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-SwWGNrC/0/X2/i-SwWGNrC-X2.jpg" target="_blank" class="img-30" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-vQjFJ3P/0/X2/i-vQjFJ3P-X2.jpg" class="img-31" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-vQjFJ3P/0/X2/i-vQjFJ3P-X2.jpg" target="_blank" class="img-31" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-nqQTQSz/0/X2/i-nqQTQSz-X2.jpg" class="img-32" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-nqQTQSz/0/X2/i-nqQTQSz-X2.jpg" target="_blank" class="img-32" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-44jgHgx/0/X3/i-44jgHgx-X3.jpg" class="img-33" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-44jgHgx/0/X3/i-44jgHgx-X3.jpg" target="_blank" class="img-33" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-R6SwDKQ/0/X2/i-R6SwDKQ-X2.jpg" class="img-34" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-R6SwDKQ/0/X2/i-R6SwDKQ-X2.jpg" target="_blank" class="img-34" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-4PkG9qm/0/X3/i-4PkG9qm-X3.jpg" class="img-35" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-4PkG9qm/0/X3/i-4PkG9qm-X3.jpg" target="_blank" class="img-35" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-rWP64FS/0/X3/i-rWP64FS-X3.jpg" class="img-36" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-rWP64FS/0/X3/i-rWP64FS-X3.jpg" target="_blank" class="img-36" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-qwZMkdM/0/X2/i-qwZMkdM-X2.jpg" class="img-37" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-qwZMkdM/0/X2/i-qwZMkdM-X2.jpg" target="_blank" class="img-37" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-MFNpLZJ/0/X2/i-MFNpLZJ-X2.jpg" class="img-38" id="portrait">
+          <a href="https://photos.smugmug.com/photos/i-MFNpLZJ/0/X2/i-MFNpLZJ-X2.jpg" target="_blank" class="img-38" id="portrait">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
-          <a href="https://photos.smugmug.com/photos/i-tZBCgVQ/0/X3/i-tZBCgVQ-X3.jpg" class="img-39" id="landscape">
+          <a href="https://photos.smugmug.com/photos/i-tZBCgVQ/0/X3/i-tZBCgVQ-X3.jpg" target="_blank" class="img-39" id="landscape">
             <i class="fa fa-external-link-square" aria-hidden="true"></i>
           </a>
         </div>
