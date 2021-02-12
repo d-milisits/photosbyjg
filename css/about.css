@@ -29,6 +29,11 @@
   background-color: #2d3436;
   color: #ecf0f1;
 }
+@media (min-width: 1999px) {
+  .cta p {
+    font-size: 1.25rem;
+  }
+}
 @media (max-width: 920px) {
   .cta p {
     padding-right: 50px;

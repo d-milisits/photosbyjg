@@ -223,6 +223,28 @@ img {
 }
 
 /* MOBILE MEDIA QUERIES */
+@media (min-width: 1999px) {
+  .nav .headline {
+    font-size: 2.75rem;
+  }
+  .nav .sub {
+    font-size: 1.35rem;
+  }
+  .nav-right i {
+    font-size: 1.85rem;
+  }
+  .nav-options {
+    font-size: 1.2rem;
+  }
+  .nav-options a::after {
+    height: 11.5px;
+    width: 11.5px;
+    left: -20px;
+  }
+  .nav-options a:hover::after {
+    left: -25px;
+  }
+}
 @media (max-width: 1151px) {
   .nav .headline {
     font-size: 2.1rem;

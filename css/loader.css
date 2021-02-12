@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ecf0f1;
-  z-index:1000;
+  z-index: 1000;
 }
 .loading p {
   margin-top: 15px;
@@ -40,6 +40,6 @@
   }
   to {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
 }

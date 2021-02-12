@@ -97,6 +97,13 @@ body {
 /* LANDING BOX END */
 
 /* MOBILE MEDIA QUERIES */
+@media (min-width: 1999px) {
+  .learn {
+    padding: 10px 55px;
+    font-size: 1.15rem;
+    left: 50%;
+  }
+}
 @media (max-width: 992px) {
   .main {
     height: 100%;
