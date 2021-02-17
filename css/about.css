@@ -30,6 +30,9 @@
   border: 1px solid #2d3436;
   transition: 0.25s;
 }
+#bold {
+  font-weight: 800;
+}
 .cta a:hover {
   background-color: #2d3436;
   color: #ecf0f1;
@@ -37,6 +40,11 @@
 @media (min-width: 1999px) {
   .cta p {
     font-size: 1.25rem;
+  }
+  .about-content img {
+    height: 700px;
+    width: 495px;
+    object-fit: cover;
   }
 }
 @media (max-height: 730px) {

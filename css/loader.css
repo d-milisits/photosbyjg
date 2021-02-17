@@ -12,7 +12,7 @@
 }
 .loading p {
   margin-top: 15px;
-  font-size: 1.25vw;
+  font-size: 1.05vw;
   letter-spacing: 5px;
   font-weight: 100;
   animation: fadeOutUp;
@@ -24,7 +24,7 @@
 .loading img {
   animation-delay: 0.2s;
   height: auto;
-  width: 10vw;
+  width: 8vw;
   animation: fadeOutUp;
   animation-delay: 0.75s;
   animation-fill-mode: both;
