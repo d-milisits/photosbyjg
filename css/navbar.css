@@ -46,6 +46,7 @@ html {
   align-items: center;
   justify-content: space-between;
   margin-top: 25px;
+  z-index: 100;
 }
 .nav.homepage {
   align-items: flex-start;
@@ -312,7 +313,7 @@ img {
   .nav .headline {
     width: 90%;
     font-size: 1.7rem;
-    line-height: 95%;
+    line-height: 100%;
   }
   .nav {
     margin-top: 15px;

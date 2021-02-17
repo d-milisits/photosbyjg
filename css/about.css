@@ -1,13 +1,18 @@
 .about-content {
   width: 100vw;
-  margin: 50px 0;
+  /* margin: 50px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .about-content img {
   height: 600px;
   width: 405px;
+  object-fit: cover;
 }
 .about-content p {
   text-transform: none;
@@ -32,6 +37,14 @@
 @media (min-width: 1999px) {
   .cta p {
     font-size: 1.25rem;
+  }
+}
+@media (max-height: 730px) {
+  .about-content {
+    margin: 50px 0;
+    position: initial;
+    top: 0;
+    transform: translateY(0%);
   }
 }
 @media (max-width: 920px) {

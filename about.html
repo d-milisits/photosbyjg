@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <link rel="stylesheet" type="text/css" href="./css/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link
@@ -12,7 +13,11 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
   </head>
-    <body id="main">    
+    <body onload="loadPageWithTitle()" id="main">    
+      <div class="loading" id="loading">
+        <img  id="loadingImg" src="./photos/DanBlack.png" alt="logo" />
+        <p  id="loadingP">JONATHAN GREGGO- BEHIND THE LENS</p>
+      </div>  
         <div class="nav animate__animated animate__fadeIn">
           <div class="nav-left" id="dark">
             <p class="headline">BEHIND THE CAMERA</p>
@@ -30,18 +35,18 @@
           </div>
         </div>
           <div class="about-content animate__animated animate__fadeIn">
-            <img src="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1"/>
+            <img src="./photos/jg-about.jpg" alt="jg"/>
             <div class="cta left">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis rhoncus nisl. Nam quis malesuada sapien. Maecenas felis dolor, placerat sit amet pharetra at, vehicula ac neque. Vestibulum non fermentum ante. Curabitur condimentum ex non vulputate lacinia. Morbi sit amet neque posuere nibh gravida posuere. Etiam laoreet eu turpis eget viverra. Duis sit amet nibh viverra, consectetur nisl sed, condimentum nunc. Ut cursus, nulla a gravida tincidunt, erat lacus tincidunt sem, sed scelerisque arcu eros at mi.</p>
               <!-- <a href="#">Questions? Get in touch</a> -->
             </div>
         </div>
-        <div class="about-content right animate__animated animate__fadeIn">
+        <!-- <div class="about-content right animate__animated animate__fadeIn">
           <div class="cta right">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis rhoncus nisl. Nam quis malesuada sapien. Maecenas felis dolor, placerat sit amet pharetra at, vehicula ac neque. Vestibulum non fermentum ante. Curabitur condimentum ex non vulputate lacinia. Morbi sit amet neque posuere nibh gravida posuere. Etiam laoreet eu turpis eget viverra. Duis sit amet nibh viverra, consectetur nisl sed, condimentum nunc. Ut cursus, nulla a gravida tincidunt, erat lacus tincidunt sem, sed scelerisque arcu eros at mi.</p>
           </div>
           <img src="https://i1.wp.com/www.photosbyjonathangreggo.com/wp-content/uploads/2020/05/DSC06780.jpg?strip=info&w=1500&ssl=1"/>
-      </div>
+      </div> -->
       <div class="mobile-menu" id="menu">
         <h1 id="close">X</h1>
         <img src="./photos/DanBlack.png"/>

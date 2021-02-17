@@ -110,10 +110,13 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 421px) {
   .learn {
     padding: 10px;
     width: 50%;
     text-align: center;
+  }
+  .loading img {
+    width: 65px;
   }
 }
