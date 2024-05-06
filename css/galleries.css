@@ -132,7 +132,7 @@
   letter-spacing: 6px;
   font-weight: 500;
 }
-@media (max-height: 840px) {
+@media (max-width: 450px) {
   .showcase {
     margin: 50px 0;
     position: initial;
